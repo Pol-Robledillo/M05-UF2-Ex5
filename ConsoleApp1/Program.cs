@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 namespace M03UF2
 {
     public class Ex2
@@ -27,6 +27,30 @@ namespace M03UF2
             Random ran = new Random();
 
             return ran.Next(min, max);
+        }
+        public static int CountVowels(string word)
+        {
+            int count = 0;
+            foreach (char c in word)
+            {
+                if ((c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u'))
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        public static int CountConsonats(string word)
+        {
+            int count = 0;
+            foreach (char c in word)
+            {
+                if ((c != 'a') || (c != 'e') || (c != 'i') || (c != 'o') || (c != 'u'))
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
