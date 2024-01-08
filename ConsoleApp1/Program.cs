@@ -22,5 +22,11 @@ namespace M03UF2
 
             return result;
         }
+        public static int RandomNumber(int min, int max)
+        {
+            Random ran = new Random();
+
+            return ran.Next(min, max);
+        }
     }
 }
