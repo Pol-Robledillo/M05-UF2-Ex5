@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace M03UF2
 {
     public class Ex2
